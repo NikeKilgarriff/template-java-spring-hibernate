@@ -71,9 +71,9 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
+                    <source>1.8</source>
                     <!-- May change this -->
-                    <target>1.6</target>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
