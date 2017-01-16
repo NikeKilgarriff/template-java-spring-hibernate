@@ -51,9 +51,14 @@
         </bean>
 
         <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+            <property name="url" value="postgres://ec2-54-243-55-1.compute-1.amazonaws.com:5432/d6r3qaftn529dr"/>
+            <property name="username" value="ghhrhdmhqlwyyi"/>
+            <property name="password" value="a06535f01c0effac26d0826aeb6b96d730a87b0783467809c8273ed9b919174b"/>
+<!--
             <property name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath() }"/>
             <property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
             <property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
+-->
         </bean>
         
         <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
